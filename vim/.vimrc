@@ -16,7 +16,7 @@ syntax enable
 set tabstop=4
 set softtabstop=4
 set expandtab
-set number
+""set number
 set showcmd
 set cursorline
 ""set cursorcolumn
@@ -44,8 +44,13 @@ nnoremap <leader>ez :vsp ~/.zshrc<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>s :mksession<CR>
 
+nnoremap <leader>m :w<CR>
 nnoremap <leader>t :terminal<CR> <C-W>k :resize +10<CR>
-nnoremap <leader>c :NERDTreeToggle<CR> :TagbarToggle<CR> <C-W>l
+nnoremap <leader>f :NERDTreeToggle<CR> <C-W>l
+nnoremap <leader>c :TagbarToggle<CR> <C-W>l
+nnoremap <leader>t0 :setl noai nocin nosi inde=<CR>
+nnoremap <leader>t1 :setl ai cin si inde=4<CR>
+
 
 " Splits
 set splitbelow
